@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/home.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>To do list</h1>
+        </div>
+        <div class="middle">
+            <div class="nav">
+                <p>Menu</p>
+                <ul>
+                    <li><a href="main.html">To do list</a></li>
+                    <li>Soon...</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <label for="enterValue" id="comand">Type an activity:</label>
+                    <input type="text" id="enterValue" placeholder="Prepare diner - 3:00pm"><br>
+                    <ol id="list">
+                    </ol>
+                </div>
+                <div class="right">
+                    <button onclick="appendTask()">Add activity</button><br>
+                    <button onclick="deleteTask()">Delete last activity</button><br>
+                    <button onclick="clearList()">Clear all activitis</button>
+                </div>
+            </div>
+            <div class="ad">
+                <p>A place for and ad!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Website created by: M0rt3usz | Hosted on Github <a href="https://github.com/"><img src="images/github-logo.png" alt="" width="16px" height="16px"></a></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
